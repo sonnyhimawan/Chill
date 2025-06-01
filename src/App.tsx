@@ -1,11 +1,16 @@
-import './App.css'
+import './App.css';
+
+
 
 function App() {
   return (
     <>
-     <h1 className="text-3xl font-bold underline">
-        Sonny Himawan
-  </h1>
+      <h1 className="text-3xl font-bold underline mb-4">
+        Testing Component
+
+
+      </h1>
+   
     </>
   )
 }
