@@ -1,17 +1,15 @@
 import { FC } from "react";
 import { ButtonProps } from "../types/Button.type";
-import IInformationOutline from "/src/assets/image/icon/information-outline.svg";
 
 
-const BtnSecondaryWithicon: FC<ButtonProps> = ({ label, type = "button", onClick }) => {
+const BtnSecondaryWithicon: FC<ButtonProps> = ({ label, type = "button", onClick,className }) => {
     return (
         <button
-            className="flex justify-center items-center gap-2 text-white px-4 py-2 rounded-full bg-secondary cursor-pointer text-sm font-medium font-myfont"
+            className={className}
             type={type}
             onClick={onClick}
         >
 
-            <img src={IInformationOutline} />
             {label}
         </button>
     );
