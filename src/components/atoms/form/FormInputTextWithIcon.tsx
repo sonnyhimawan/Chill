@@ -2,8 +2,8 @@ import { FC } from "react";
 import { FormProps } from "../../../types/Form.type";
 import { useState } from "react";
 import FormLabel from "./FormLabel";
-import EyeIcon from "assets/icon/eye.svg?react";
-import EyeOffIcon from "assets/icon/eye-off.svg?react";
+import EyeIcon from "/public/assets/icon/eye.svg?react";
+import EyeOffIcon from "/public/assets/icon/eye-off.svg?react";
 import BtnPrimary from "../button/BtnPrimaryWithIcon";
 
 

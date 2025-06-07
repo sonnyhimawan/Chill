@@ -1,7 +1,7 @@
 import BtnPrimary from "../atoms/button/BtnPrimaryWithIcon";
 import BtnSecondaryWithicon from "../atoms/button/BtnSecondaryWithIcon";
-import InformationIcon from "../../assets/icon/information-outline.svg?react";
-import VolumeOffIcon from "assets/icon/volume-off.svg?react";
+import InformationIcon from "/public/assets/icon/information-outline.svg?react";
+import VolumeOffIcon from "/public/assets/icon/volume-off.svg?react";
 
 
 const HeroSection = () => {

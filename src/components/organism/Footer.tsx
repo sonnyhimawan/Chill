@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { useState } from "react";
-import DownIcon from "assets/icon/down.svg?react";
+import DownIcon from "/public/assets/icon/down.svg?react";
 
 
 

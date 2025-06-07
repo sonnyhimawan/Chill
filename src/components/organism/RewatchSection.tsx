@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import PrevIcon from "assets/icon/arrow-left.svg?react";
-import NextIcon from "assets/icon/arrow-right.svg?react";
+import PrevIcon from "/public/assets/icon/arrow-left.svg?react";
+import NextIcon from "/public/assets/icon/arrow-right.svg?react";
 import NewEpisodeCardFilmLandscape from "../atoms/card/NewEpisodeCardFilmLandscape";
 
 

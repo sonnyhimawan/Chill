@@ -1,9 +1,9 @@
 import { Link } from "react-router";
 import { useState } from "react";
-import DownIcon from "assets/icon/down.svg?react";
-import AccountIcon from "assets/icon/account.svg?react";
-import PremiumIcon from "assets/icon/star.svg?react";
-import LogoutIcon from "assets/icon/Logout.svg?react";
+import DownIcon from "/public/assets/icon/down.svg?react";
+import AccountIcon from "/public/assets/icon/account.svg?react";
+import PremiumIcon from "/public/assets/icon/star.svg?react";
+import LogoutIcon from "/public/assets/icon/Logout.svg?react";
 import BtnPrimary from "../atoms/button/BtnPrimaryWithIcon";
 
 
