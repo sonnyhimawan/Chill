@@ -4,14 +4,13 @@ import HomeLayout from "../Layout/HomeLayout";
 
 
 const HomePage = () => {
-  return (
+    return (
 
-    <HomeLayout>
+        <HomeLayout>
             <HeroSection></HeroSection>
-               
-                <RewatchSection></RewatchSection>
-    </HomeLayout>
-  );
+            <RewatchSection></RewatchSection>
+        </HomeLayout>
+    );
 };
 
 export default HomePage;
