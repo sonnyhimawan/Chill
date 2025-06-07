@@ -8,7 +8,6 @@ const HeroSection = () => {
 
 
     return (
-
         <section>
             <div className="w-full mx-auto">
                 <div className="grid grid-cols-12">
@@ -44,14 +43,14 @@ const HeroSection = () => {
 
                                             label="Mulai"
                                             type="button"
-                                            className="bg-primary px-3 sm:px-3 lg:px-6 py-1.5 sm:py-1.5 lg:py-3 hover:bg-btn-primary-hover text-sm-12 sm:text-sm-12 lg:text-p font-medium font-primary text-white rounded-full"
+                                            className="bg-primary px-3 sm:px-3 lg:px-6 py-1.5 sm:py-1.5 lg:py-3 hover:bg-primary/80 text-sm-12 sm:text-sm-12 lg:text-p font-medium font-primary text-white rounded-full"
                                         ></BtnPrimary>
 
 
                                         <BtnSecondaryWithicon
                                         label="Selengkapnya"
                                         type="button"
-                                        className="bg-secondary px-3 sm:px-3 lg:px-6 py-1.5 sm:py-1.5 lg:py-3 hover:bg-btn-secondary-hover text-sm-12 sm:text-sm-12 lg:text-p font-medium font-primary text-white rounded-full flex items-center gap-2"
+                                        className="bg-secondary px-3 sm:px-3 lg:px-6 py-1.5 sm:py-1.5 lg:py-3 hover:bg-secondary/80 text-sm-12 sm:text-sm-12 lg:text-p font-medium font-primary text-white rounded-full flex items-center gap-2"
                                         icon={InfoIcon}
                                         >
                                     
