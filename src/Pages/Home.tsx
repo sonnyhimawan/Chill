@@ -1,14 +1,14 @@
+import HeroSection from "../components/organism/HeroSection";
 import HomeLayout from "../Layout/HomeLayout";
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <HomeLayout
-    
-    
-    
-    
-    />
+
+    <HomeLayout>
+            <HeroSection></HeroSection>
+    </HomeLayout>
+
   );
 };
 
-export default Home;
+export default HomePage;

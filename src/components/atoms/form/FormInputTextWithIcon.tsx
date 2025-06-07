@@ -1,9 +1,10 @@
 import { FC } from "react";
-import { FormProps } from "../types/Form.type";
+import { FormProps } from "../../../types/Form.type";
 import { useState } from "react";
 import FormLabel from "./FormLabel";
 import EyeIcon from "/src/assets/image/icon/eye.svg?react";
 import EyeOffIcon from "/src/assets/image/icon/eye-off.svg?react";
+import BtnPrimary from "../button/BtnPrimaryWithIcon";
 
 
 
@@ -30,13 +31,13 @@ const FormInputWithicon: FC<FormProps> = ({ label, id, name, placeholder, value,
                     className="border border-secondary outline-0 focus:border-primary rounded-full px-3 py-2 w-full text-base font-normal font-myfont"
                 />
               {isPasswordType && (
-                    <button
+                    <BtnPrimary
                         type="button"
                         onClick={() => setShowPassword(!showPassword)}
                         className="absolute top-3 right-3 w-5 h-5 text-gray-500"
                     >
                         {showPassword ? <EyeOffIcon /> : <EyeIcon />}
-                    </button>
+                    </BtnPrimary>
 
               )}
             </div>

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ButtonProps } from "../types/Button.type";
+import { ButtonProps } from "../../../types/Button.type";
 import GoogleIcon from "/src/assets/image/icon/google.svg";
 
 

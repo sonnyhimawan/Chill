@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { LabelProps } from "../types/Label.type";
+import { LabelProps } from "../../../types/Label.type";
 
 
 

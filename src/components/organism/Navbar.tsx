@@ -14,7 +14,6 @@ const Navbar = () => {
     const [isOpen, SetIsopen] = useState(false);
     const handleUserMenu = () => {
         SetIsopen(!isOpen);
-        console.log("button di klik")
     }
 
 
@@ -62,7 +61,7 @@ const Navbar = () => {
                             alt="user account"
                             className="w-8 lg:w-10"
                         />
-                        <DownIcon className={`transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`} />
+                        <DownIcon className={`transition-transform duration-300 ${isOpen ? "-rotate-180" : "rotate-0"}`} />
                     </BtnPrimary>
 
                     {isOpen && (

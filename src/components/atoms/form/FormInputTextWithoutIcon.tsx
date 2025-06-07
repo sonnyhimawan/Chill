@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { FormProps } from "../types/Form.type";
+import { FormProps } from "../../../types/Form.type";
 import FormLabel from "./FormLabel";
 
 
