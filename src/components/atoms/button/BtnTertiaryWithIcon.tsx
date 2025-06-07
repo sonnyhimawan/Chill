@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { ButtonProps } from "../../../types/Button.type";
-import GoogleIcon from "/src/assets/image/icon/google.svg";
+import GoogleIcon from "/src/assets/icon/google.svg";
 
 
 const BtnTertiaryWithicon: FC<ButtonProps> = ({ label, type = "button", onClick, className }) => {
