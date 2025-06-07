@@ -1,6 +1,6 @@
 import BtnPrimary from "../atoms/button/BtnPrimaryWithIcon";
 import BtnSecondaryWithicon from "../atoms/button/BtnSecondaryWithIcon";
-import InfoIcon from "assets/icon/information-outline.svg?react";
+import InformationIcon from "../../assets/icon/information-outline.svg?react";
 import VolumeOffIcon from "assets/icon/volume-off.svg?react";
 
 
@@ -51,7 +51,7 @@ const HeroSection = () => {
                                         label="Selengkapnya"
                                         type="button"
                                         className="bg-secondary px-3 sm:px-3 lg:px-6 py-1.5 sm:py-1.5 lg:py-3 hover:bg-secondary/80 text-sm-12 sm:text-sm-12 lg:text-p font-medium font-primary text-white rounded-full flex items-center gap-2"
-                                        icon={InfoIcon}
+                                        icon={InformationIcon}
                                         >
                                     
                                         </BtnSecondaryWithicon>
