@@ -4,7 +4,7 @@ const Register = () => {
   return (
     <div
       className="h-screen bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: "url('/src/assets/img/bg-register.jpg')" }}
+      style={{ backgroundImage: "url('assets/img/bg-register.jpg')" }}
     >
       <div className="bg-background/80 px-8 py-4 rounded-lg w-full max-w-md m-4">
                 <RegisterForm />

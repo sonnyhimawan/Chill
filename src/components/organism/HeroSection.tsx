@@ -1,7 +1,7 @@
-import VolumeOffIcon from "/public/assets/icon/volume-off.svg?react"
+import VolumeOffIcon from "assets/icon/volume-off.svg?react"
 import BtnPrimary from "../atoms/button/BtnPrimaryWithIcon";
 import BtnSecondaryWithicon from "../atoms/button/BtnSecondaryWithIcon";
-import InfoIcon from "/public/assets/icon/information-outline.svg?react";
+import InfoIcon from "assets/icon/information-outline.svg?react";
 
 
 const HeroSection = () => {
@@ -14,7 +14,7 @@ const HeroSection = () => {
                     <div className="col-span-full">
                         <div className="w-full relative">
                             <img
-                                src="/public/assets/img/Duty-School.png"
+                                src="assets/img/Duty-School.png"
                                 alt="duty after school"
                                 className="w-full h-80 sm:h-full lg:h-full object-cover"
                             />

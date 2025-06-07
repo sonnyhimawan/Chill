@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { useState } from "react";
-import DownIcon from "/public/assets/icon/down.svg?react";
+import DownIcon from "assets/icon/down.svg?react";
 
 
 
@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="bg-background grid span-3 gap-y-10 px-8 py-10 border border-t-1 border-t-border border-t-gray-800/80 sm:px-10 lg:px-16 w-full lg:grid-cols-[0.8fr_2fr] md:grid-cols-[1fr_2.5fr]">
                 <div className="flex flex-col lg:justify-center space-y-6 lg:space-y-6">
                     <img
-                        src="/public/assets/Logo-Horizon.png"
+                        src="assets/Logo-Horizon.png"
                         height="24"
                         width="140"
                         alt="Chill Website Logo"

@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import PrevIcon from "/public/assets/icon/arrow-left.svg?react";
-import NextIcon from "/public/assets/icon/arrow-right.svg?react";
+import PrevIcon from "assets/icon/arrow-left.svg?react";
+import NextIcon from "assets/icon/arrow-right.svg?react";
 import NewEpisodeCardFilmLandscape from "../atoms/card/NewEpisodeCardFilmLandscape"
 
 
@@ -25,21 +25,21 @@ const RewatchSection = () => {
         {
             name: "Black Adam",
             title: "Black Adam",
-            image: "/public/assets/img/Black-Adam.png",
+            image: "assets/img/Black-Adam.png",
             rating: 4.2,
             badge: "Episode Baru"
         },
         {
             name: "Stuart Litle",
             title: "Stuart Litle",
-            image: "/public/assets/img/Stuart-Litle.png",
+            image: "assets/img/Stuart-Litle.png",
             rating: 4.6,
             badge: "Episode Baru"
         },
         {
             name: "The Devil All The Time",
             title: "The Devil All The Time",
-            image: "/public/assets/img/The-Devil-All-The-Time.png",
+            image: "assets/img/The-Devil-All-The-Time.png",
             rating: 4.4,
             badge: "Episode Baru"
         },
@@ -47,14 +47,14 @@ const RewatchSection = () => {
         {
             name: "Alice In Borderland",
             title: "Alice In Borderland",
-            image: "/public/assets/img/Alice-In-Borderland.png",
+            image: "assets/img/Alice-In-Borderland.png",
             rating: 4.4,
         },
 
         {
             name: "Bokuno Hero Academya",
             title: "Bokuno Hero Academya",
-            image: "/public/assets/img/Bokuno-Hero-Academya.png",
+            image: "assets/img/Bokuno-Hero-Academya.png",
             rating: 4.4,
             badge: "Episode Baru"
         },
@@ -62,7 +62,7 @@ const RewatchSection = () => {
         {
             name: "Ant Man Quantumania",
             title: "Ant Man Quantumania",
-            image: "/public/assets/img/ANT-Man-Quantumania.png",
+            image: "assets/img/ANT-Man-Quantumania.png",
             rating: 4.4,
         },
     ];
