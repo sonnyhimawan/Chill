@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import VolumeOffIcon from "/src/assets/image/icon/volume-off.svg?react"
 import BtnPrimary from "../atoms/button/BtnPrimaryWithIcon";
 import BtnSecondaryWithicon from "../atoms/button/BtnSecondaryWithIcon";
@@ -57,23 +56,19 @@ const HeroSection = () => {
                                     
                                         </BtnSecondaryWithicon>
 
-                                    
-                                        <Link
-                                            to="#"
-                                            className="px-1 sm:px-1 lg:px-3 py-1.5 sm:py-1.5 lg:py-3 text-white font-primary text-sm-12 sm:text-sm-12 lg:text-p flex items-center justify-center border-1 rounded-full"
-                                        >
-                                            18+
-                                        </Link>
+
+                                        <BtnPrimary
+                                        label="18+"
+                                        type="button"
+                                        className="px-1 sm:px-1 lg:px-3 py-1.5 sm:py-1.5 lg:py-3 text-white font-primary text-sm-12 sm:text-sm-12 lg:text-p flex items-center justify-center border-1 rounded-full"
+                                        />
                                     </div>
                                     <div className="flex items-end">
-                                        <button
-                                            id="audio"
-                                            aria-label="audio"
-                                            type="button"
-                                            className="px-2 sm:px-2 lg:px-3.5 py-2 sm:py-2 lg:py-3.5 text-sm flex items-center justify-center font-primary text-white border border-white rounded-full mt-3 mr-2"
-                                        >
-                                            <VolumeOffIcon />
-                                        </button>
+                                        <BtnPrimary
+                                        type="button"
+                                        className="px-2 sm:px-2 lg:px-3.5 py-2 sm:py-2 lg:py-3.5 text-sm flex items-center justify-center font-primary text-white border border-white rounded-full mt-3 mr-2"
+                                        icon={VolumeOffIcon}
+                                        />
                                     </div>
                                 </div>
                             </div>
