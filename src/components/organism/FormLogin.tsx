@@ -46,7 +46,7 @@ const LoginForm = () => {
             <div className="flex justify-between items-center">
                 <span className="text-gray-400 text-base font-normal font-myfont">
                     Belum Punya Akun?
-                    <Link to="/register" className="text-white text-base font-bold font-myfont">
+                    <Link to="/Register" className="text-white text-base font-bold font-myfont">
                         Daftar
                     </Link>
                 </span>
