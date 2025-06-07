@@ -1,9 +1,9 @@
 import { Link } from "react-router";
 import { useState } from "react";
-import DownIcon from "/src/assets/icon/down.svg?react";
-import AccountIcon from "/src/assets/icon/account.svg?react";
-import PremiumIcon from "/src/assets/icon/star.svg?react";
-import LogoutIcon from "/src/assets/icon/Logout.svg?react";
+import DownIcon from "/public/assets/icon/down.svg?react";
+import AccountIcon from "/public/assets/icon/account.svg?react";
+import PremiumIcon from "/public/assets/icon/star.svg?react";
+import LogoutIcon from "/public/assets/icon/Logout.svg?react";
 import BtnPrimary from "../atoms/button/BtnPrimaryWithIcon";
 
 
@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="mx-auto flex w-full sm:gap-10 items-center">
                 <Link to="/"
                 ><img
-                        src="/src/assets/Logo-Horizon.png"
+                        src="/public/assets/Logo-Horizon.png"
                         height="24"
                         width="140"
                         alt="dekstop chill logo"
@@ -31,7 +31,7 @@ const Navbar = () => {
                     /></Link>
                 <Link to="/"
                 ><img
-                        src="/src/assets/chill-logo1.svg"
+                        src="/public/assets/chill-logo1.svg"
                         height="24"
                         width="24"
                         alt="mobile chill Logo"
@@ -57,7 +57,7 @@ const Navbar = () => {
                         onClick={handleUserMenu}
                     >
                         <img
-                            src="/src/assets/img/user.png"
+                            src="/public/assets/img/user.png"
                             alt="user account"
                             className="w-8 lg:w-10"
                         />

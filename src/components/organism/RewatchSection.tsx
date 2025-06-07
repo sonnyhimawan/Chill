@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import PrevIcon from "/src/assets/icon/arrow-left.svg?react";
-import NextIcon from "/src/assets/icon/arrow-right.svg?react";
+import PrevIcon from "/public/assets/icon/arrow-left.svg?react";
+import NextIcon from "/public/assets/icon/arrow-right.svg?react";
 import NewEpisodeCardFilmLandscape from "../atoms/card/NewEpisodeCardFilmLandscape"
 
 
@@ -19,27 +19,27 @@ const RewatchSection = () => {
         {
             name: "Don't Look Up",
             title: "Don't Look Up",
-            image: "/src/assets/img/Dont-Look-Up.png",
+            image: "/public/assets/img/Dont-Look-Up.png",
             rating: 4.5
         },
         {
             name: "Black Adam",
             title: "Black Adam",
-            image: "/src/assets/img/Black-Adam.png",
+            image: "/public/assets/img/Black-Adam.png",
             rating: 4.2,
             badge: "Episode Baru"
         },
         {
             name: "Stuart Litle",
             title: "Stuart Litle",
-            image: "/src/assets/img/Stuart-Litle.png",
+            image: "/public/assets/img/Stuart-Litle.png",
             rating: 4.6,
             badge: "Episode Baru"
         },
         {
             name: "The Devil All The Time",
             title: "The Devil All The Time",
-            image: "/src/assets/img/The-Devil-All-The-Time.png",
+            image: "/public/assets/img/The-Devil-All-The-Time.png",
             rating: 4.4,
             badge: "Episode Baru"
         },
@@ -47,14 +47,14 @@ const RewatchSection = () => {
         {
             name: "Alice In Borderland",
             title: "Alice In Borderland",
-            image: "/src/assets/img/Alice-In-Borderland.png",
+            image: "/public/assets/img/Alice-In-Borderland.png",
             rating: 4.4,
         },
 
         {
             name: "Bokuno Hero Academya",
             title: "Bokuno Hero Academya",
-            image: "/src/assets/img/Bokuno-Hero-Academya.png",
+            image: "/public/assets/img/Bokuno-Hero-Academya.png",
             rating: 4.4,
             badge: "Episode Baru"
         },
@@ -62,7 +62,7 @@ const RewatchSection = () => {
         {
             name: "Ant Man Quantumania",
             title: "Ant Man Quantumania",
-            image: "/src/assets/img/ANT-Man-Quantumania.png",
+            image: "/public/assets/img/ANT-Man-Quantumania.png",
             rating: 4.4,
         },
     ];
