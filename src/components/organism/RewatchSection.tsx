@@ -6,6 +6,7 @@ import NextIcon from "/src/assets/icon/arrow-right.svg?react";
 import NewEpisodeCardFilmLandscape from "../atoms/card/NewEpisodeCardFilmLandscape";
 
 
+
 // CSS bawaan Swiper
 
 const RewatchSection = () => {
@@ -16,7 +17,7 @@ const RewatchSection = () => {
         {
             name: "Don't Look Up",
             title: "Don't Look Up",
-            image: "/public/img/Dont Look Up.png",
+            image: "/src/assets/img/Dont Look Up.png",
             rating: 4.5
         },
         {
