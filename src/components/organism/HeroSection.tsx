@@ -14,7 +14,7 @@ const HeroSection = () => {
                     <div className="col-span-full">
                         <div className="w-full relative">
                             <img
-                                src="/src/assets/img/Duty School.png"
+                                src="/src/assets/img/Duty-School.png"
                                 alt="duty after school"
                                 className="w-full h-80 sm:h-full lg:h-full object-cover"
                             />

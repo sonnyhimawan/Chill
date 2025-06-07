@@ -16,7 +16,7 @@ const LoginForm = () => {
         <form className="max-w-md mx-auto m-6">
             <div className="flex flex-col items-center gap-2 mb-8">
                 <Link to="/">
-                <img src="/src/assets/img/Logo-Horizon.png" alt="Chill Movie" className="mb-6"></img>
+                <img src="/src/assets/Logo-Horizon.png" alt="Chill Movie" className="mb-6"></img>
                 </Link>
                 <h1 className="text-white text-4xl font-medium font-myfont">Masuk</h1>
                 <span className="text-white text-lg font-normal font-myfont">Silahkan Masuk</span>
