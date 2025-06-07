@@ -16,7 +16,7 @@ const RewatchSection = () => {
         {
             name: "Don't Look Up",
             title: "Don't Look Up",
-            image: "/src/assets/img/Dont Look Up.png",
+            image: "/public/img/Dont Look Up.png",
             rating: 4.5
         },
         {
