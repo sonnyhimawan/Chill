@@ -9,5 +9,5 @@ export default defineConfig({
     tailwindcss(),
     svgr()
     ],
-  base: 'Chill-Movie-Stream',
+  base: '/',
 })
