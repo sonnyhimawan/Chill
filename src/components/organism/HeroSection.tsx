@@ -3,6 +3,7 @@ import BtnPrimary from "../atoms/button/BtnPrimaryWithIcon";
 import BtnSecondaryWithicon from "../atoms/button/BtnSecondaryWithIcon";
 import InfoIcon from "/src/assets/image/icon/information-outline.svg?react";
 
+
 const HeroSection = () => {
 
 
@@ -77,6 +78,7 @@ const HeroSection = () => {
                 </div>
             </div>
         </section>
+       
 
 
     )

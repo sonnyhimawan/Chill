@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 @theme {
  --font-myfont: "Lato", sans-serif;
 --color-primary:#0F1E93;
