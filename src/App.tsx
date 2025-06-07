@@ -1,19 +1,11 @@
-import './App.css';
-import Login from './Pages/Login';
-
-
+import { RouterProvider } from "react-router-dom";
+import {router} from "../routes/index";
 
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline mb-4">
-        Testing Component
-
-      </h1>
-
-      <Login/>
-   
+    <RouterProvider router={router}></RouterProvider>
     </>
   )
 }

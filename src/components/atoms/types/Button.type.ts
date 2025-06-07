@@ -1,9 +1,10 @@
-import { SVGProps } from "react";
+import { ReactNode, SVGProps } from "react";
 
 export interface ButtonProps {
-  label: string;
+  label?: string;
   type: "button" | "submit" | "reset";
   onClick?: () => void;
   icon?: React.FC<SVGProps<SVGSVGElement>>;
   className : string;
+ children?: ReactNode;
 }
