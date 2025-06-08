@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { FilmCards } from "../../../types/FilmCards.type";
+import RateIcon from "/public/assets/icon/star.svg?react";
 
 
 
@@ -36,7 +37,7 @@ const CardFilmLandscape: FC<FilmCards> = ({ name, title, image, icon: Icon, rati
         </h1>
         <span
           className="flex items-center font-myfont gap-2 text-white text-lg font-normal"
-        >{Icon && <Icon />}{rating}</span>
+        >{Icon ? <Icon className="w-4 h-4" /> : <RateIcon className="w-4 h-4" />}{rating}/5</span>
       </div>
 
       {badge && (
