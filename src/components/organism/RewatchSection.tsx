@@ -118,11 +118,11 @@ const RewatchSection = () => {
                         loop={true}
                         autoplay={!isMobile ? { delay: 3000 } : false}
                         breakpoints={{
-                            375: { slidesPerView: 1.2 },
-                            640: { slidesPerView: 1.2 },
-                            768: { slidesPerView: 1.2 },
+                            375: { slidesPerView: 1.1 },
+                            640: { slidesPerView: 1.4 },
+                            768: { slidesPerView: 2 },
                             1024: { slidesPerView: 3 },
-                            1280: { slidesPerView: 4 },
+                            1280: { slidesPerView: 5 },
                         }}
                         onSwiper={(swiper) => setSwiperInstance(swiper)}
                         onBeforeInit={(swiper) => {

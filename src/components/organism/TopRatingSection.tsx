@@ -122,10 +122,10 @@ const TopRatingSection = () => {
                         loop={true}
                         autoplay={!isMobile ? { delay: 3000 } : false}
                         breakpoints={{
-                            375: { slidesPerView: 2.4 },
+                            375: { slidesPerView: 2.2 },
                             640: { slidesPerView: 2.4 },
-                            768: { slidesPerView: 1.2 },
-                            1024: { slidesPerView: 3 },
+                            768: { slidesPerView: 3 },
+                            1024: { slidesPerView: 4 },
                             1280: { slidesPerView: 5 },
                         }}
                         onSwiper={(swiper) => setSwiperInstance(swiper)}
