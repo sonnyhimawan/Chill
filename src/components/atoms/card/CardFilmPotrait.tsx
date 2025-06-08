@@ -2,7 +2,7 @@ import { FC } from "react";
 import { FilmCards } from "../../../types/FilmCards.type";
 
 
-const NewEpisodeCardFilmPotrait: FC<FilmCards> = ({title,image,badge}) => {
+const CardFilmPotrait: FC<FilmCards> = ({title,image,badge}) => {
     return (
 
        <div className="relative swiper-slide rounded-lg">
@@ -24,4 +24,4 @@ const NewEpisodeCardFilmPotrait: FC<FilmCards> = ({title,image,badge}) => {
     );
 };
 
-export default NewEpisodeCardFilmPotrait;
+export default CardFilmPotrait;

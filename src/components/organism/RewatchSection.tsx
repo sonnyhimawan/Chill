@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import PrevIcon from "/public/assets/icon/arrow-left.svg?react";
 import NextIcon from "/public/assets/icon/arrow-right.svg?react";
-import NewEpisodeCardFilmLandscape from "../atoms/card/NewEpisodeCardFilmLandscape";
+import CardFilmLandscape from "../atoms/card/CardFilmLandscape";
 
 
 
@@ -34,7 +34,7 @@ const RewatchSection = () => {
             title: "Stuart Litle",
             image: "assets/img/Stuart-Litle.png",
             rating: 4.6,
-            badge: "Episode Baru"
+            badge: "Top 10"
         },
         {
             name: "The Devil All The Time",
@@ -115,7 +115,7 @@ const RewatchSection = () => {
                 >
                     {films.map((RewatchItem, index) => (
                         <SwiperSlide key={index}>
-                            <NewEpisodeCardFilmLandscape
+                            <CardFilmLandscape
                                 name={RewatchItem.name}
                                 title={RewatchItem.title}
                                 image={RewatchItem.image}
