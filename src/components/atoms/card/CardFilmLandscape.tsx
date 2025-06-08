@@ -20,11 +20,13 @@ const CardFilmLandscape: FC<FilmCards> = ({ name, title, image, icon: Icon, rati
   return (
 
     <div className="relative rounded-lg">
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-full rounded-lg object-cover"
-      />
+      <div className="overflow-hidden rounded-lg ">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full rounded-lg object-cover transition-all duration-300 hover:scale-110 "
+        />
+      </div>
       <div
         className="absolute bottom-0 flex w-full mr-auto p-4 sm:p-4 md:p-4 lg:p-6 rounded-b-lg">
         <h1
@@ -45,7 +47,7 @@ const CardFilmLandscape: FC<FilmCards> = ({ name, title, image, icon: Icon, rati
           >
             {badge === "Top 10" ? (
               <>
-                Top<br/>10
+                Top<br />10
               </>
             ) : (
               badge

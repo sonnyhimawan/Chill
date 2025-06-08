@@ -1,98 +1,103 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef,useState,useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper as SwiperClass } from "swiper";
 import PrevIcon from "/public/assets/icon/arrow-left.svg?react";
 import NextIcon from "/public/assets/icon/arrow-right.svg?react";
-import CardFilmLandscape from "../atoms/card/CardFilmLandscape";
+import CardFilmPotrait from "../atoms/card/CardFilmPotrait";
 
 
-const RewatchSection = () => {
+const TopTrendingSection = () => {
 
     const prevRef = useRef<HTMLButtonElement>(null);
     const nextRef = useRef<HTMLButtonElement>(null);
     const [swiperInstance, setSwiperInstance] = useState<SwiperClass | null>(null);
     const [isMobile, setIsMobile] = useState(false);
+        
+          useEffect(() => {
+            const handleDeviceSize = () => {
+              setIsMobile(window.innerWidth < 640);
+            };
+        
+            handleDeviceSize();
+            window.addEventListener("resize", handleDeviceSize);
+            return () => window.removeEventListener("resize", handleDeviceSize);
+          }, []);
+    
+          const handleMouseEnter = () => {
+            if (swiperInstance?.autoplay) {
+              swiperInstance.autoplay.stop();
+            }
+          };
+    
+          const handleMouseLeave = () => {
+            if (swiperInstance?.autoplay) {
+              swiperInstance.autoplay.start();
+            }
+          };
 
-  useEffect(() => {
-    const handleDeviceSize = () => {
-      setIsMobile(window.innerWidth < 640);
-    };
 
-    handleDeviceSize();
-    window.addEventListener("resize", handleDeviceSize);
-    return () => window.removeEventListener("resize", handleDeviceSize);
-  }, []);
-
-   const handleMouseEnter = () => {
-        if (swiperInstance?.autoplay) {
-            swiperInstance.autoplay.stop();
-        }
-    };
-
-    const handleMouseLeave = () => {
-        if (swiperInstance?.autoplay) {
-            swiperInstance.autoplay.start();
-        }
-    };
-
-       const films = [
+    const films = [
         {
-            name: "Don't Look Up",
-            title: "Don't Look Up",
-            image: "assets/img/Dont-Look-Up.png",
-            rating: 4.5
+            name: "Doctor Strange",
+            title: "Doctor Strange",
+            image: "assets/img/Doctor-Strange.png",
+            rating: 4.8,
+            badge: "Top 10"
         },
         {
-            name: "Black Adam",
-            title: "Black Adam",
-            image: "assets/img/Black-Adam.png",
-            rating: 4.2,
-            badge: "Episode Baru"
-        },
-        {
-            name: "Stuart Litle",
-            title: "Stuart Litle",
-            image: "assets/img/Stuart-Litle.png",
+            name: "Duti After School",
+            title: "Duti After School",
+            image: "assets/img/Duti-After-School-p.png",
             rating: 4.6,
             badge: "Top 10"
         },
         {
-            name: "The Devil All The Time",
-            title: "The Devil All The Time",
-            image: "assets/img/The-Devil-All-The-Time.png",
-            rating: 4.4,
-            badge: "Episode Baru"
+            name: "Guardian Of Galaxy",
+            title: "Guardian Of Galaxy",
+            image: "assets/img/Guardian-Of-Galaxy.png",
+            rating: 4.7,
+            badge: "Top 10"
+        },
+        {
+            name: "Missing",
+            title: "Missing",
+            image: "assets/img/Missing.png",
+            rating: 4.8,
+            badge: "Top 10"
         },
 
         {
-            name: "Alice In Borderland",
-            title: "Alice In Borderland",
-            image: "assets/img/Alice-In-Borderland.png",
-            rating: 4.4,
+            name: "Little Mermaid",
+            title: "Little Mermaid",
+            image: "assets/img/Little-Mermaid.png",
+            rating: 4.8,
+            badge: "Top 10"
         },
 
         {
-            name: "Bokuno Hero Academya",
-            title: "Bokuno Hero Academya",
-            image: "assets/img/Bokuno-Hero-Academya.png",
-            rating: 4.4,
-            badge: "Episode Baru"
+            name: "Spiderman Accross The Spider Verse",
+            title: "Spiderman Accross The Spider Verse",
+            image: "assets/img/Spiderman-Across-The-Spider-Verse.png",
+            rating: 4.9,
+            badge: "Top 10"
         },
 
         {
-            name: "Ant Man Quantumania",
-            title: "Ant Man Quantumania",
-            image: "assets/img/ANT-Man-Quantumania.png",
-            rating: 4.4,
+            name: "Jurassic Park",
+            title: "Jurassic Park",
+            image: "assets/img/Jurassic-Park.png",
+            rating: 4.7,
+            badge: "Top 10"
         },
     ];
 
+    
     return (
         <section>
             <div className="px-8 py-8 sm:py-10 lg:py-16 sm:px-10 lg:px-16 overflow-x-hidden relative bg-background">
                 <h1 className="text-1xl sm:text-3xl md:text-3xl lg:text-4xl font-bold font-myFont text-white mb-4 sm:mb-5 md:mb-6 lg:mb-8">
-                    Melajutkan Nonton Film
+                    Film Trending
                 </h1>
 
                 <button
@@ -115,14 +120,14 @@ const RewatchSection = () => {
                         modules={[Navigation, Autoplay]}
                         spaceBetween={20}
                         slidesPerView={1.2}
-                        loop={true}
                         autoplay={!isMobile ? { delay: 3000 } : false}
+                        loop={true}
                         breakpoints={{
-                            375: { slidesPerView: 1.2 },
-                            640: { slidesPerView: 1.2 },
+                            375: { slidesPerView: 2.4 },
+                            640: { slidesPerView: 2.4 },
                             768: { slidesPerView: 1.2 },
                             1024: { slidesPerView: 3 },
-                            1280: { slidesPerView: 4 },
+                            1280: { slidesPerView: 5 },
                         }}
                         onSwiper={(swiper) => setSwiperInstance(swiper)}
                         onBeforeInit={(swiper) => {
@@ -136,10 +141,10 @@ const RewatchSection = () => {
                         }}
                         className="swipper-wrapper relative rounded-lg flex gap-4 w-full sm:overflow-x-hidden lg:overflow-x-hidden"
                     >
-                        {films.map((RewatchItem, index) => (
+                        {films.map((TrendingItem, index) => (
                             <SwiperSlide key={index}>
-                                <CardFilmLandscape
-                                    {...RewatchItem}
+                                <CardFilmPotrait
+                                    {...TrendingItem}
                                 />
                             </SwiperSlide>
                         ))}
@@ -152,4 +157,4 @@ const RewatchSection = () => {
     );
 };
 
-export default RewatchSection;
+export default TopTrendingSection;

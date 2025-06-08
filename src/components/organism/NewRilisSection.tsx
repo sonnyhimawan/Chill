@@ -1,98 +1,101 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef,useState,useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper as SwiperClass } from "swiper";
 import PrevIcon from "/public/assets/icon/arrow-left.svg?react";
 import NextIcon from "/public/assets/icon/arrow-right.svg?react";
-import CardFilmLandscape from "../atoms/card/CardFilmLandscape";
+import CardFilmPotrait from "../atoms/card/CardFilmPotrait";
 
-
-const RewatchSection = () => {
+const NewRilisSection = () => {
 
     const prevRef = useRef<HTMLButtonElement>(null);
     const nextRef = useRef<HTMLButtonElement>(null);
     const [swiperInstance, setSwiperInstance] = useState<SwiperClass | null>(null);
     const [isMobile, setIsMobile] = useState(false);
+    
+      useEffect(() => {
+        const handleDeviceSize = () => {
+          setIsMobile(window.innerWidth < 640);
+        };
+    
+        handleDeviceSize();
+        window.addEventListener("resize", handleDeviceSize);
+        return () => window.removeEventListener("resize", handleDeviceSize);
+      }, []);
 
-  useEffect(() => {
-    const handleDeviceSize = () => {
-      setIsMobile(window.innerWidth < 640);
-    };
-
-    handleDeviceSize();
-    window.addEventListener("resize", handleDeviceSize);
-    return () => window.removeEventListener("resize", handleDeviceSize);
-  }, []);
-
-   const handleMouseEnter = () => {
+      const handleMouseEnter = () => {
         if (swiperInstance?.autoplay) {
-            swiperInstance.autoplay.stop();
+          swiperInstance.autoplay.stop();
         }
-    };
+      };
 
-    const handleMouseLeave = () => {
+      const handleMouseLeave = () => {
         if (swiperInstance?.autoplay) {
-            swiperInstance.autoplay.start();
+          swiperInstance.autoplay.start();
         }
-    };
+      };
 
-       const films = [
+
+
+    const films = [
         {
-            name: "Don't Look Up",
-            title: "Don't Look Up",
-            image: "assets/img/Dont-Look-Up.png",
-            rating: 4.5
+            name: "Suzume",
+            title: "Suzume",
+            image: "assets/img/Suzume.png",
+            rating: 4.5,
+            badge: "Episode Baru"
         },
         {
-            name: "Black Adam",
-            title: "Black Adam",
-            image: "assets/img/Black-Adam.png",
-            rating: 4.2,
-            badge: "Episode Baru"
+            name: "Rio",
+            title: "Rio",
+            image: "assets/img/Rio.png",
+            rating: 4.8,
+            badge: "Top 10"
         },
         {
             name: "Stuart Litle",
             title: "Stuart Litle",
-            image: "assets/img/Stuart-Litle.png",
+            image: "assets/img/Stuart.png",
             rating: 4.6,
             badge: "Top 10"
         },
         {
             name: "The Devil All The Time",
             title: "The Devil All The Time",
-            image: "assets/img/The-Devil-All-The-Time.png",
+            image: "assets/img/The-Devil-All-The-Time-Potrait.png",
             rating: 4.4,
             badge: "Episode Baru"
         },
 
         {
-            name: "Alice In Borderland",
-            title: "Alice In Borderland",
-            image: "assets/img/Alice-In-Borderland.png",
+            name: "Ted Lasso",
+            title: "Ted Lasso",
+            image: "assets/img/Ted-Lasso.png",
             rating: 4.4,
         },
 
         {
-            name: "Bokuno Hero Academya",
-            title: "Bokuno Hero Academya",
-            image: "assets/img/Bokuno-Hero-Academya.png",
+            name: "Baby Max",
+            title: "Baby Max",
+            image: "assets/img/Baby-Max.png",
             rating: 4.4,
             badge: "Episode Baru"
         },
 
         {
-            name: "Ant Man Quantumania",
-            title: "Ant Man Quantumania",
-            image: "assets/img/ANT-Man-Quantumania.png",
+            name: "Bluelock",
+            title: "Bluelock",
+            image: "assets/img/Bluelock.png",
             rating: 4.4,
         },
     ];
 
+    
     return (
         <section>
             <div className="px-8 py-8 sm:py-10 lg:py-16 sm:px-10 lg:px-16 overflow-x-hidden relative bg-background">
                 <h1 className="text-1xl sm:text-3xl md:text-3xl lg:text-4xl font-bold font-myFont text-white mb-4 sm:mb-5 md:mb-6 lg:mb-8">
-                    Melajutkan Nonton Film
+                    New Rilis
                 </h1>
 
                 <button
@@ -118,11 +121,11 @@ const RewatchSection = () => {
                         loop={true}
                         autoplay={!isMobile ? { delay: 3000 } : false}
                         breakpoints={{
-                            375: { slidesPerView: 1.2 },
-                            640: { slidesPerView: 1.2 },
+                            375: { slidesPerView: 2.4 },
+                            640: { slidesPerView: 2.4 },
                             768: { slidesPerView: 1.2 },
                             1024: { slidesPerView: 3 },
-                            1280: { slidesPerView: 4 },
+                            1280: { slidesPerView: 5 },
                         }}
                         onSwiper={(swiper) => setSwiperInstance(swiper)}
                         onBeforeInit={(swiper) => {
@@ -136,10 +139,10 @@ const RewatchSection = () => {
                         }}
                         className="swipper-wrapper relative rounded-lg flex gap-4 w-full sm:overflow-x-hidden lg:overflow-x-hidden"
                     >
-                        {films.map((RewatchItem, index) => (
+                        {films.map((NewRilisItem, index) => (
                             <SwiperSlide key={index}>
-                                <CardFilmLandscape
-                                    {...RewatchItem}
+                                <CardFilmPotrait
+                                    {...NewRilisItem}
                                 />
                             </SwiperSlide>
                         ))}
@@ -152,4 +155,4 @@ const RewatchSection = () => {
     );
 };
 
-export default RewatchSection;
+export default NewRilisSection;
