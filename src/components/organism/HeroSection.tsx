@@ -9,7 +9,7 @@ const HeroSection = () => {
 
     return (
         <section>
-            <div className="w-full mx-auto">
+            <div className="w-full mx-auto pt-20">
                 <div className="grid grid-cols-12">
                     <div className="col-span-full">
                         <div className="w-full relative">
