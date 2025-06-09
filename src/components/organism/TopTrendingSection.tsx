@@ -39,6 +39,7 @@ const TopTrendingSection = () => {
 
     const films = [
         {
+            id:1,
             name: "Doctor Strange",
             title: "Doctor Strange",
             image: "assets/img/Doctor-Strange.png",
@@ -46,6 +47,7 @@ const TopTrendingSection = () => {
             badge: "Top 10"
         },
         {
+            id:2,
             name: "Duti After School",
             title: "Duti After School",
             image: "assets/img/Duti-After-School-p.png",
@@ -53,6 +55,7 @@ const TopTrendingSection = () => {
             badge: "Top 10"
         },
         {
+            id:3,
             name: "Guardian Of Galaxy",
             title: "Guardian Of Galaxy",
             image: "assets/img/Guardian-Of-Galaxy.png",
@@ -60,6 +63,7 @@ const TopTrendingSection = () => {
             badge: "Top 10"
         },
         {
+            id:4,
             name: "Missing",
             title: "Missing",
             image: "assets/img/Missing.png",
@@ -68,6 +72,7 @@ const TopTrendingSection = () => {
         },
 
         {
+            id:5,
             name: "Little Mermaid",
             title: "Little Mermaid",
             image: "assets/img/Little-Mermaid.png",
@@ -76,6 +81,7 @@ const TopTrendingSection = () => {
         },
 
         {
+            id:6,
             name: "Spiderman Accross The Spider Verse",
             title: "Spiderman Accross The Spider Verse",
             image: "assets/img/Spiderman-Across-The-Spider-Verse.png",
@@ -84,6 +90,7 @@ const TopTrendingSection = () => {
         },
 
         {
+            id:7,
             name: "Jurassic Park",
             title: "Jurassic Park",
             image: "assets/img/Jurassic-Park.png",
@@ -141,8 +148,8 @@ const TopTrendingSection = () => {
                         }}
                         className="swipper-wrapper relative rounded-lg flex gap-4 w-full sm:overflow-x-hidden lg:overflow-x-hidden"
                     >
-                        {films.map((TrendingItem, index) => (
-                            <SwiperSlide key={index}>
+                        {films.map((TrendingItem) => (
+                            <SwiperSlide key={TrendingItem.id}>
                                 <CardFilmPotrait
                                     {...TrendingItem}
                                 />

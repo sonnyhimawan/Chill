@@ -40,6 +40,7 @@ const TopRatingSection = () => {
 
     const films = [
         {
+            id:1,
             name: "Suzume",
             title: "Suzume",
             image: "assets/img/Suzume.png",
@@ -47,6 +48,7 @@ const TopRatingSection = () => {
             badge: "Episode Baru"
         },
         {
+            id:2,
             name: "Rio",
             title: "Rio",
             image: "assets/img/Rio.png",
@@ -54,6 +56,7 @@ const TopRatingSection = () => {
             badge: "Top 10"
         },
         {
+            id:3,
             name: "Stuart Litle",
             title: "Stuart Litle",
             image: "assets/img/Stuart.png",
@@ -61,6 +64,7 @@ const TopRatingSection = () => {
             badge: "Top 10"
         },
         {
+            id:4,
             name: "The Devil All The Time",
             title: "The Devil All The Time",
             image: "assets/img/The-Devil-All-The-Time-Potrait.png",
@@ -69,6 +73,7 @@ const TopRatingSection = () => {
         },
 
         {
+            id:5,
             name: "Ted Lasso",
             title: "Ted Lasso",
             image: "assets/img/Ted-Lasso.png",
@@ -76,6 +81,7 @@ const TopRatingSection = () => {
         },
 
         {
+            id:6,
             name: "Baby Max",
             title: "Baby Max",
             image: "assets/img/Baby-Max.png",
@@ -84,6 +90,7 @@ const TopRatingSection = () => {
         },
 
         {
+            id:7,
             name: "Bluelock",
             title: "Bluelock",
             image: "assets/img/Bluelock.png",
@@ -140,8 +147,8 @@ const TopRatingSection = () => {
                         }}
                         className="swipper-wrapper relative rounded-lg flex gap-4 w-full sm:overflow-x-hidden lg:overflow-x-hidden"
                     >
-                        {films.map((TopRatingItem, index) => (
-                            <SwiperSlide key={index}>
+                        {films.map((TopRatingItem) => (
+                            <SwiperSlide key={TopRatingItem.id}>
                                 <CardFilmPotrait
                                     {...TopRatingItem}
                                 />

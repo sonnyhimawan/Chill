@@ -38,12 +38,14 @@ const RewatchSection = () => {
 
        const films = [
         {
+            id:1,
             name: "Don't Look Up",
             title: "Don't Look Up",
             image: "assets/img/Dont-Look-Up.png",
             rating: 4.5
         },
         {
+            id:2,
             name: "Black Adam",
             title: "Black Adam",
             image: "assets/img/Black-Adam.png",
@@ -51,6 +53,7 @@ const RewatchSection = () => {
             badge: "Episode Baru"
         },
         {
+            id:3,
             name: "Stuart Litle",
             title: "Stuart Litle",
             image: "assets/img/Stuart-Litle.png",
@@ -58,6 +61,7 @@ const RewatchSection = () => {
             badge: "Top 10"
         },
         {
+            id:4,
             name: "The Devil All The Time",
             title: "The Devil All The Time",
             image: "assets/img/The-Devil-All-The-Time.png",
@@ -66,6 +70,7 @@ const RewatchSection = () => {
         },
 
         {
+            id:5,
             name: "Alice In Borderland",
             title: "Alice In Borderland",
             image: "assets/img/Alice-In-Borderland.png",
@@ -73,6 +78,7 @@ const RewatchSection = () => {
         },
 
         {
+            id:6,
             name: "Bokuno Hero Academya",
             title: "Bokuno Hero Academya",
             image: "assets/img/Bokuno-Hero-Academya.png",
@@ -81,13 +87,15 @@ const RewatchSection = () => {
         },
 
         {
+            id:7,
             name: "Ant Man Quantumania",
             title: "Ant Man Quantumania",
             image: "assets/img/ANT-Man-Quantumania.png",
             rating: 4.4,
         },
+        
     ];
-
+console.log(films);
     return (
         <section>
             <div className="px-8 py-8 sm:py-10 lg:py-16 sm:px-10 lg:px-16 overflow-x-hidden relative bg-background">
@@ -136,8 +144,8 @@ const RewatchSection = () => {
                         }}
                         className="swipper-wrapper relative rounded-lg flex gap-4 w-full sm:overflow-x-hidden lg:overflow-x-hidden"
                     >
-                        {films.map((RewatchItem, index) => (
-                            <SwiperSlide key={index}>
+                        {films.map((RewatchItem) => (
+                            <SwiperSlide key={RewatchItem.id}>
                                 <CardFilmLandscape
                                     {...RewatchItem}
                                 />

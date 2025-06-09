@@ -1,6 +1,7 @@
 import {SVGProps } from "react";
 
 export interface FilmCards {
+  id:number;
   name : string;
   title: string;
   image: string;
