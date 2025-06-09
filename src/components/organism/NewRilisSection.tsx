@@ -39,6 +39,7 @@ const NewRilisSection = () => {
 
     const films = [
         {
+            id:1,
             name: "Suzume",
             title: "Suzume",
             image: "assets/img/Suzume.png",
@@ -46,6 +47,7 @@ const NewRilisSection = () => {
             badge: "Episode Baru"
         },
         {
+            id:2,
             name: "Rio",
             title: "Rio",
             image: "assets/img/Rio.png",
@@ -53,6 +55,7 @@ const NewRilisSection = () => {
             badge: "Top 10"
         },
         {
+            id:3,
             name: "Stuart Litle",
             title: "Stuart Litle",
             image: "assets/img/Stuart.png",
@@ -60,6 +63,7 @@ const NewRilisSection = () => {
             badge: "Top 10"
         },
         {
+            id:4,
             name: "The Devil All The Time",
             title: "The Devil All The Time",
             image: "assets/img/The-Devil-All-The-Time-Potrait.png",
@@ -68,6 +72,7 @@ const NewRilisSection = () => {
         },
 
         {
+            id:5,
             name: "Ted Lasso",
             title: "Ted Lasso",
             image: "assets/img/Ted-Lasso.png",
@@ -75,6 +80,7 @@ const NewRilisSection = () => {
         },
 
         {
+            id:6,
             name: "Baby Max",
             title: "Baby Max",
             image: "assets/img/Baby-Max.png",
@@ -83,6 +89,7 @@ const NewRilisSection = () => {
         },
 
         {
+            id:7,
             name: "Bluelock",
             title: "Bluelock",
             image: "assets/img/Bluelock.png",
@@ -139,8 +146,8 @@ const NewRilisSection = () => {
                         }}
                         className="swipper-wrapper relative rounded-lg flex gap-4 w-full sm:overflow-x-hidden lg:overflow-x-hidden"
                     >
-                        {films.map((NewRilisItem, index) => (
-                            <SwiperSlide key={index}>
+                        {films.map((NewRilisItem) => (
+                            <SwiperSlide key={NewRilisItem.id}>
                                 <CardFilmPotrait
                                     {...NewRilisItem}
                                 />
