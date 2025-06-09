@@ -129,7 +129,7 @@ const RewatchSection = () => {
                             640: { slidesPerView: 1.4 },
                             768: { slidesPerView: 2 },
                             1024: { slidesPerView: 3 },
-                            1280: { slidesPerView: 5 },
+                            1280: { slidesPerView: 4 },
                         }}
                         onSwiper={(swiper) => setSwiperInstance(swiper)}
                         onBeforeInit={(swiper) => {
