@@ -17,46 +17,46 @@ const getBadges = (badge?: string): string => {
 };
 
 
-const CardFilmLandscape: FC<FilmCards> = ({ name, title, image, icon: Icon, rating, badge }) => {
+const CardFilmLandscape: FC<FilmCards> = ({ id, name, title, image, icon: Icon, rating, badge }) => {
   return (
-
-    <div className="relative rounded-lg">
-      <div className="overflow-hidden rounded-lg ">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full rounded-lg object-cover transition-all duration-300 hover:scale-110 "
-        />
-      </div>
-      <div
-        className="absolute bottom-0 flex w-full mr-auto p-4 sm:p-4 md:p-4 lg:p-6 rounded-b-lg">
-        <h1
-          className="items-center mr-auto font-myfont text-white text-1xl sm:text-1xl md:text-1xl lg:text-1xl font-bold truncate"
-        >
-          {name}
-        </h1>
-        <span
-          className="flex items-center font-myfont gap-2 text-white text-lg font-normal"
-        >{Icon ? <Icon className="w-4 h-4" /> : <RateIcon className="w-4 h-4" />}{rating}/5</span>
-      </div>
-
-      {badge && (
-        <div
-          className={getBadges(badge)}>
-          <span
-            className="flex text-center text-white font-myfont text-sm sm:text-sm md:text-lg lg:text-1xl font-medium"
-          >
-            {badge === "Top 10" ? (
-              <>
-                Top<br />10
-              </>
-            ) : (
-              badge
-            )}
-          </span>
+    <div data-id={id}>
+      <div className="relative rounded-lg">
+        <div className="overflow-hidden rounded-lg ">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full rounded-lg object-cover transition-all duration-300 hover:scale-110 "
+          />
         </div>
-      )}
+        <div
+          className="absolute bottom-0 flex w-full mr-auto p-4 sm:p-4 md:p-4 lg:p-6 rounded-b-lg">
+          <h1
+            className="items-center mr-auto font-myfont text-white text-1xl sm:text-1xl md:text-1xl lg:text-1xl font-bold truncate"
+          >
+            {name}
+          </h1>
+          <span
+            className="flex items-center font-myfont gap-2 text-white text-lg font-normal"
+          >{Icon ? <Icon className="w-4 h-4" /> : <RateIcon className="w-4 h-4" />}{rating}/5</span>
+        </div>
 
+        {badge && (
+          <div
+            className={getBadges(badge)}>
+            <span
+              className="flex text-center text-white font-myfont text-sm sm:text-sm md:text-lg lg:text-1xl font-medium"
+            >
+              {badge === "Top 10" ? (
+                <>
+                  Top<br />10
+                </>
+              ) : (
+                badge
+              )}
+            </span>
+          </div>
+        )}
+      </div>
     </div>
 
 

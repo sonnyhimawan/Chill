@@ -17,33 +17,33 @@ const getBadges = (badge?: string): string => {
 };
 
 
-const CardFilmPotrait: FC<FilmCards> = ({ title, image, badge }) => {
+const CardFilmPotrait: FC<FilmCards> = ({ id, title, image, badge }) => {
   return (
-
-    <div className="relative swiper-slide rounded-lg">
-      <div className="overflow-hidden rounded-lg ">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full rounded-lg object-cover transition-all duration-300 hover:scale-110"
-        />
-      </div>
-      <div
-        className={getBadges(badge)}>
-        <span
-          className="flex text-center text-white font-myfont text-sm sm:text-sm md:text-lg lg:text-1xl font-medium"
-        >
-          {badge === "Top 10" ? (
-            <>
-              Top<br />10
-            </>
-          ) : (
-            badge
-          )}
-        </span>
+    <div data-id={id}>
+      <div className="relative swiper-slide rounded-lg">
+        <div className="overflow-hidden rounded-lg ">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full rounded-lg object-cover transition-all duration-300 hover:scale-110"
+          />
+        </div>
+        <div
+          className={getBadges(badge)}>
+          <span
+            className="flex text-center text-white font-myfont text-sm sm:text-sm md:text-lg lg:text-1xl font-medium"
+          >
+            {badge === "Top 10" ? (
+              <>
+                Top<br />10
+              </>
+            ) : (
+              badge
+            )}
+          </span>
+        </div>
       </div>
     </div>
-
 
 
   );
