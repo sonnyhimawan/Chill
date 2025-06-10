@@ -1,4 +1,4 @@
-import { useRef,useState,useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper as SwiperClass } from "swiper";
@@ -13,92 +13,94 @@ const TopRatingSection = () => {
     const nextRef = useRef<HTMLButtonElement>(null);
     const [swiperInstance, setSwiperInstance] = useState<SwiperClass | null>(null);
     const [isMobile, setIsMobile] = useState(false);
-    
-      useEffect(() => {
+
+    useEffect(() => {
         const handleDeviceSize = () => {
-          setIsMobile(window.innerWidth < 640);
+            setIsMobile(window.innerWidth < 640);
         };
-    
+
         handleDeviceSize();
         window.addEventListener("resize", handleDeviceSize);
         return () => window.removeEventListener("resize", handleDeviceSize);
-      }, []);
+    }, []);
 
-      const handleMouseEnter = () => {
+    const handleMouseEnter = () => {
         if (swiperInstance?.autoplay) {
-          swiperInstance.autoplay.stop();
+            swiperInstance.autoplay.stop();
         }
-      };
+    };
 
-      const handleMouseLeave = () => {
+    const handleMouseLeave = () => {
         if (swiperInstance?.autoplay) {
-          swiperInstance.autoplay.start();
+            swiperInstance.autoplay.start();
         }
-      };
+    };
 
 
 
     const films = [
         {
-            id:1,
-            name: "Suzume",
-            title: "Suzume",
-            image: "assets/img/Suzume.png",
-            rating: 4.5,
-            badge: "Episode Baru"
+            "id": 1,
+            "name": "Suzume",
+            "title": "Suzume",
+            "image": "assets/img/Suzume.png",
+            "rating": 4.5,
+            "badge": "Episode Baru"
         },
         {
-            id:2,
-            name: "Rio",
-            title: "Rio",
-            image: "assets/img/Rio.png",
-            rating: 4.8,
-            badge: "Top 10"
+            "id": 2,
+            "name": "Rio",
+            "title": "Rio",
+            "image": "assets/img/Rio.png",
+            "rating": 4.8,
+            "badge": "Top 10"
         },
         {
-            id:3,
-            name: "Stuart Litle",
-            title: "Stuart Litle",
-            image: "assets/img/Stuart.png",
-            rating: 4.6,
-            badge: "Top 10"
+            "id": 3,
+            "name": "Stuart Litle",
+            "title": "Stuart Litle",
+            "image": "assets/img/Stuart.png",
+            "rating": 4.6,
+            "badge": "Top 10"
         },
         {
-            id:4,
-            name: "The Devil All The Time",
-            title: "The Devil All The Time",
-            image: "assets/img/The-Devil-All-The-Time-Potrait.png",
-            rating: 4.4,
-            badge: "Episode Baru"
-        },
-
-        {
-            id:5,
-            name: "Ted Lasso",
-            title: "Ted Lasso",
-            image: "assets/img/Ted-Lasso.png",
-            rating: 4.4,
+            "id": 4,
+            "name": "The Devil All The Time",
+            "title": "The Devil All The Time",
+            "image": "assets/img/The-Devil-All-The-Time-Potrait.png",
+            "rating": 4.4,
+            "badge": "Episode Baru"
         },
 
         {
-            id:6,
-            name: "Baby Max",
-            title: "Baby Max",
-            image: "assets/img/Baby-Max.png",
-            rating: 4.4,
-            badge: "Episode Baru"
+            "id": 5,
+            "name": "Ted Lasso",
+            "title": "Ted Lasso",
+            "image": "assets/img/Ted-Lasso.png",
+            "rating": 4.4,
+            "badge": ""
         },
 
         {
-            id:7,
-            name: "Bluelock",
-            title: "Bluelock",
-            image: "assets/img/Bluelock.png",
-            rating: 4.4,
+            "id": 6,
+            "name": "Baby Max",
+            "title": "Baby Max",
+            "image": "assets/img/Baby-Max.png",
+            "rating": 4.4,
+            "badge": "Episode Baru"
+        },
+
+        {
+            "id": 7,
+            "name": "Bluelock",
+            "title": "Bluelock",
+            "image": "assets/img/Bluelock.png",
+            "rating": 4.4,
+            "badge": ""
         },
     ];
 
-    
+
     return (
         <section>
             <div className="px-8 py-8 sm:py-10 lg:py-16 sm:px-10 lg:px-16 overflow-x-hidden relative bg-background">

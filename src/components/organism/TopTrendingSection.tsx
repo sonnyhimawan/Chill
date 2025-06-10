@@ -39,63 +39,63 @@ const TopTrendingSection = () => {
 
     const films = [
         {
-            id:1,
-            name: "Doctor Strange",
-            title: "Doctor Strange",
-            image: "assets/img/Doctor-Strange.png",
-            rating: 4.8,
-            badge: "Top 10"
+            "id":1,
+            "name": "Doctor Strange",
+            "title": "Doctor Strange",
+            "image": "assets/img/Doctor-Strange.png",
+            "rating": 4.8,
+            "badge": "Top 10"
         },
         {
-            id:2,
-            name: "Duti After School",
-            title: "Duti After School",
-            image: "assets/img/Duti-After-School-p.png",
-            rating: 4.6,
-            badge: "Top 10"
+            "id":2,
+            "name": "Duti After School",
+            "title": "Duti After School",
+            "image": "assets/img/Duti-After-School-p.png",
+            "rating": 4.6,
+            "badge": "Top 10"
         },
         {
-            id:3,
-            name: "Guardian Of Galaxy",
-            title: "Guardian Of Galaxy",
-            image: "assets/img/Guardian-Of-Galaxy.png",
-            rating: 4.7,
-            badge: "Top 10"
+            "id":3,
+            "name": "Guardian Of Galaxy",
+            "title": "Guardian Of Galaxy",
+            "image": "assets/img/Guardian-Of-Galaxy.png",
+            "rating": 4.7,
+            "badge": "Top 10"
         },
         {
-            id:4,
-            name: "Missing",
-            title: "Missing",
-            image: "assets/img/Missing.png",
-            rating: 4.8,
-            badge: "Top 10"
-        },
-
-        {
-            id:5,
-            name: "Little Mermaid",
-            title: "Little Mermaid",
-            image: "assets/img/Little-Mermaid.png",
-            rating: 4.8,
-            badge: "Top 10"
+            "id":4,
+            "name": "Missing",
+            "title": "Missing",
+            "image": "assets/img/Missing.png",
+            "rating": 4.8,
+            "badge": "Top 10"
         },
 
         {
-            id:6,
-            name: "Spiderman Accross The Spider Verse",
-            title: "Spiderman Accross The Spider Verse",
-            image: "assets/img/Spiderman-Across-The-Spider-Verse.png",
-            rating: 4.9,
-            badge: "Top 10"
+            "id":5,
+            "name": "Little Mermaid",
+            "title": "Little Mermaid",
+            "image": "assets/img/Little-Mermaid.png",
+            "rating": 4.8,
+            "badge": "Top 10"
         },
 
         {
-            id:7,
-            name: "Jurassic Park",
-            title: "Jurassic Park",
-            image: "assets/img/Jurassic-Park.png",
-            rating: 4.7,
-            badge: "Top 10"
+            "id":6,
+            "name": "Spiderman Accross The Spider Verse",
+            "title": "Spiderman Accross The Spider Verse",
+            "image": "assets/img/Spiderman-Across-The-Spider-Verse.png",
+            "rating": 4.9,
+            "badge": "Top 10"
+        },
+
+        {
+            "id":7,
+            "name": "Jurassic Park",
+            "title": "Jurassic Park",
+            "image": "assets/img/Jurassic-Park.png",
+            "rating": 4.7,
+            "badge": "Top 10"
         },
     ];
 
