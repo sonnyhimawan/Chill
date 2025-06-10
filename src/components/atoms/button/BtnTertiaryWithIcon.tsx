@@ -5,7 +5,7 @@ import GoogleIcon from "/public/assets/icon/google.svg";
 
 const BtnTertiaryWithicon: FC<ButtonProps> = ({ label, type = "button", onClick, className }) => {
     return (
-        <button
+        <button 
             className={className}
             type={type}
             onClick={onClick}

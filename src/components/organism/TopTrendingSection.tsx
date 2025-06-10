@@ -48,8 +48,8 @@ const TopTrendingSection = () => {
         },
         {
             "id":2,
-            "name": "Duti After School",
-            "title": "Duti After School",
+            "name": "Duty After School",
+            "title": "Duty After School",
             "image": "assets/img/Duti-After-School-p.png",
             "rating": 4.6,
             "badge": "Top 10"
