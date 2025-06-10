@@ -98,6 +98,7 @@ const RewatchSection = () => {
         },
 
     ];
+    
     return (
         <section>
             <div className="px-8 py-8 sm:py-10 lg:py-16 sm:px-10 lg:px-16 overflow-x-hidden relative bg-background">
