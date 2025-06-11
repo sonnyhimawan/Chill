@@ -9,7 +9,6 @@ import FormLabel from "./FormLabel";
 const ForminputWithouticon: FC<FormProps> = ({ label, id, name, placeholder, value,type, onChange}) => {
 
     return (
-        <div className="mb-4">
         <FormLabel label={label}>
             <div className="relative mt-2">
                 <input
@@ -23,7 +22,6 @@ const ForminputWithouticon: FC<FormProps> = ({ label, id, name, placeholder, val
                 />
             </div>
         </FormLabel>
-        </div>
 
     );
 

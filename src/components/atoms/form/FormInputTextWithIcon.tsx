@@ -18,7 +18,6 @@ const FormInputWithicon: FC<FormProps> = ({ label, id, name, placeholder, value,
     const inputType = isPasswordType ? (showPassword ? "text" : "password") : type;
 
     return (
-        <div className="mb-4">
         <FormLabel label={label}>
             <div className="relative mt-2">
                 <input
@@ -42,7 +41,6 @@ const FormInputWithicon: FC<FormProps> = ({ label, id, name, placeholder, value,
               )}
             </div>
         </FormLabel>
-        </div>
 
     );
 
