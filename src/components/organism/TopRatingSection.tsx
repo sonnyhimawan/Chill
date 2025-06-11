@@ -40,63 +40,63 @@ const TopRatingSection = () => {
 
     const films = [
         {
-            "id": 1,
-            "name": "Suzume",
-            "title": "Suzume",
-            "image": "assets/img/Suzume.png",
-            "rating": 4.5,
-            "badge": "Episode Baru"
+            id: 1,
+            name: "Suzume",
+            title: "Suzume",
+            image: "assets/img/Suzume.png",
+            rating: 4.5,
+            badge: "Episode Baru"
         },
         {
-            "id": 2,
-            "name": "Rio",
-            "title": "Rio",
-            "image": "assets/img/Rio.png",
-            "rating": 4.8,
-            "badge": "Top 10"
+            id: 2,
+            name: "Rio",
+            title: "Rio",
+            image: "assets/img/Rio.png",
+            rating: 4.8,
+            badge: "Top 10"
         },
         {
-            "id": 3,
-            "name": "Stuart Litle",
-            "title": "Stuart Litle",
-            "image": "assets/img/Stuart.png",
-            "rating": 4.6,
-            "badge": "Top 10"
+            id: 3,
+            name: "Stuart Litle",
+            title: "Stuart Litle",
+            image: "assets/img/Stuart.png",
+            rating: 4.6,
+            badge: "Top 10"
         },
         {
-            "id": 4,
-            "name": "The Devil All The Time",
-            "title": "The Devil All The Time",
-            "image": "assets/img/The-Devil-All-The-Time-Potrait.png",
-            "rating": 4.4,
-            "badge": "Episode Baru"
-        },
-
-        {
-            "id": 5,
-            "name": "Ted Lasso",
-            "title": "Ted Lasso",
-            "image": "assets/img/Ted-Lasso.png",
-            "rating": 4.4,
-            "badge": ""
+            id: 4,
+            name: "The Devil All The Time",
+            title: "The Devil All The Time",
+            image: "assets/img/The-Devil-All-The-Time-Potrait.png",
+            rating: 4.4,
+            badge: "Episode Baru"
         },
 
         {
-            "id": 6,
-            "name": "Baby Max",
-            "title": "Baby Max",
-            "image": "assets/img/Baby-Max.png",
-            "rating": 4.4,
-            "badge": "Episode Baru"
+            id: 5,
+            name: "Ted Lasso",
+            title: "Ted Lasso",
+            image: "assets/img/Ted-Lasso.png",
+            rating: 4.4,
+            badge: ""
         },
 
         {
-            "id": 7,
-            "name": "Bluelock",
-            "title": "Bluelock",
-            "image": "assets/img/Bluelock.png",
-            "rating": 4.4,
-            "badge": ""
+            id: 6,
+            name: "Baby Max",
+            title: "Baby Max",
+            image: "assets/img/Baby-Max.png",
+            rating: 4.4,
+            badge: "Episode Baru"
+        },
+
+        {
+            id: 7,
+            name: "Bluelock",
+            title: "Bluelock",
+            image: "assets/img/Bluelock.png",
+            rating: 4.4,
+            badge: ""
         },
     ];
 
